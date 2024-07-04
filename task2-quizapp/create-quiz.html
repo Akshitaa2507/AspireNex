@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz - Online Quiz Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Online Quiz Maker</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create-quiz.html">Create Quiz</a></li>
+                    <li><a href="take-quiz.html">Take Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="create-quiz" class="quiz-section">
+            <div class="container">
+                <h2>Create a Quiz</h2>
+                <form id="quiz-form">
+                    <div class="form-group">
+                        <label for="title">Quiz Title:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="question">Question:</label>
+                        <input type="text" id="question" name="question" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="option1">Option 1:</label>
+                        <input type="text" id="option1" name="option1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="option2">Option 2:</label>
+                        <input type="text" id="option2" name="option2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="option3">Option 3:</label>
+                        <input type="text" id="option3" name="option3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="option4">Option 4:</label>
+                        <input type="text" id="option4" name="option4" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correct-answer">Correct Answer (1-4):</label>
+                        <select id="correct-answer" name="correct-answer" required>
+                            <option value="0">Option 1</option>
+                            <option value="1">Option 2</option>
+                            <option value="2">Option 3</option>
+                            <option value="3">Option 4</option>
+                        </select>
+                    </div>
+                    <button type="submit">Add Question</button>
+                    <button id="submit-quiz" type="button" style="display: none;">Submit Quiz</button>
+                </form>
+                <div id="questions-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Online Quiz Maker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="create-quiz.js"></script>
+</body>
+</html>
